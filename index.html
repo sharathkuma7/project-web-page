@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive navbar</title>
+    <!-- <link rel="stylesheet" href="p.css"> -->
+    <style>
+        body{
+            background-color: rgb(228, 235, 235);
+        }
+        .card_container{
+            /* display: flex; */
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr 1fr 1fr;
+            /* flex-direction: row; */
+            justify-content: center;
+            align-items: center;
+            /* margin: 10px; */
+            /* padding: 10px; */
+        }
+        .cards{
+            background-color: rgb(218, 230, 218);
+            /* width: 400px; */
+            width: calc(200px + 60vw);
+            /* padding: 10px; */
+            text-align: center;
+            margin: 10px;
+            /* height: 100%; */
+            /* border-radius: 10px; */
+        }
+       .div > p{
+            text-align: justify;
+        }
+        
+        .cards, div > img{
+           width: 100%;
+           /* margin: 20px; */
+           /* padding: 10px; */
+            /* background-size: cover; */
+            /* background-position: center; */
+           
+        }
+        h3 {
+            color: blue;
+        }
+        
+        b {
+            color: black;
+
+        }
+
+        .body{
+    margin: 1.5px;
+    /* height: 100vh; */
+    width: 98%;
+    padding: 0;
+    box-sizing: border-box;
+    /* width: calc(200px + 60vw); */
+    flex-direction: column;
+    /* background-color: rgb(155, 55, 55); */
+}
+
+/* Adding a background to the navbar */
+.nav {
+    background-image: linear-gradient(to right, #00030b , #000103);
+    overflow: hidden;
+} 
+/* styling the links inside the navbar */
+.nav a {
+    float: right;
+    display: block;
+    color: rgb(251, 243, 243);
+    
+    text-align: center;
+    padding: 15px;
+    /* text-decoration: none; */
+    /* font-size: 15px; */
+    font-weight: bolder;
+}
+
+a:hover {
+    color: orange;
+}
+
+ /* .backgroundimg {
+    width: 1500px;
+    height: 50%;
+ } */
+p1 {
+    position: absolute;
+    top: 02%;
+    left: 15%;
+    color: white;
+}
+b1 {
+    color: red;
+}
+span > img {
+    width: 100%;
+}
+
+
+.top-centered {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    color: red;
+}
+h2 {
+     letter-spacing: 10px;
+}
+
+.centered {
+    position: absolute;
+    top: 60%;
+    left: 30%;
+    color: white;
+}
+h6 {
+    display: grid;
+    left: 70%;
+    font-size: 20px;
+  
+}
+
+.container_about {
+    display: grid;
+    gap: 20px;
+
+    grid-template-columns: repeat(2,1fr);
+
+}
+.container_about,image {
+    display: grid;
+    left: 70%;
+
+}
+strong {
+    color: rgb(21, 188, 243);
+}
+.b2 {
+    color: darkblue;
+}
+
+      
+    </style>
+</head>
+<body>
+<div class="body">
+     <!-- creating a mine menu -->
+     <div class="nav">
+        <!-- <i class="fa-solid fa-bars"></i> -->
+        <!--  to adding necesary links  -->
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#products">Our Products</a>
+        <a href="#Home" class="active"> Home</a>
+        <P1>SIXTEEN <B1>CLOTHING</B1></P1>
+    </div>
+
+    <div class="background">
+        <span><img src="./slide_01.jpg"alt=""></span>
+        <div class="top-centered"><h5>BEST OFFER</h5></div>
+        <div class="centered"> <h2>NEW ARRIVALS ON SALE</h2></div>
+    </div>
+
+    <h6>Latest Products</h6>
+
+
+    
+
+
+    <div class="card_container">
+        <div class="cards">
+            <img src="./product_01.jpg" alt="">
+            <div>
+                <h3 class="card-title">Tittle goes Here &nbsp; <b>$25.75</b></h3>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite.
+                 Itaque, corporis nulla aspernatur.</p>
+                 <!-- <p class="card-description">Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p> -->
+            </div>
+        </div>
+        
+        <div class="cards">
+            <img src="./product_02.jpg" alt="">
+            <div>
+                <h3 class="card-title">Tittle goes Here  &nbsp; <b>$30.25</b></h3>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite.
+                     Itaque, corporis nulla aspernatur.</p>
+             <!-- <p class="card-description">Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p> -->
+            </div>
+        </div>
+
+        <div class="cards">
+            <img src="./product_03.jpg" alt="">
+            
+            <div>
+                <h3 class="card-title">Tittle goes Here  &nbsp; <b>$20.45</b></h3>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite.
+                     Itaque, corporis nulla aspernatur.</p>
+             <!-- <p class="card-description">Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p> -->
+            </div>
+            
+        </div>
+
+        <div class="cards">
+            <img src="./product_04.jpg" alt="">
+            
+            <div>
+                <h3 class="card-title">Tittle goes Here  &nbsp; <b>$15.25</b></h3>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite.
+                     Itaque, corporis nulla aspernatur.</p>
+             <!-- <p class="card-description">Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p> -->
+            </div>
+            
+        </div>
+
+        <div class="cards">
+            <img src="./product_05.jpg" alt="">
+            <div>
+                <h3 class="card-title">Tittle goes Here  &nbsp; <b>$12.50</b></h3>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite.
+                     Itaque, corporis nulla aspernatur.</p>
+             <!-- <p class="card-description">Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p> -->
+            </div>
+            
+        </div>
+
+        <div class="cards">
+            <img src="./product_06.jpg" alt="">
+            
+            <div>
+                <h3 class="card-title">Tittle goes Here  &nbsp; <b>$22.50</b></h3>
+                <p>Lorem ipsume dolor sit amet, adipisicing elite.
+                     Itaque, corporis nulla aspernatur.</p>
+             <!-- <p class="card-description">Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p> -->
+            </div>
+            
+        </div>
+    </div> 
+    
+    <h6>About Sixteen Clothing</h6>
+    <div class="container_about">
+
+        <img src="./feature-image.jpg" alt="">
+        <strong>Looking for the best products?</strong>
+        <p>This template is free to use for your business websites.
+             However, you have no permission to redistribute the 
+             downloadable ZIP file on any template collection website. 
+             Contact us for more info.</p>
+        <div> <span><ul><li>Lorem ipsum dolor sit amet</li>
+            <li>  Consectetur an adipisicing elit</li>
+              <li>It aquecorporis nulla aspernatur</li>
+             <li> Corporis, omnis doloremque</li>
+             <li> Non cum id reprehenderit</li></ul></span></div>
+       
+    </div>
+    
+
+
+    <div>
+      <strong>  Creative & Unique <b2>Sixteen</b2> Products</strong>
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corporis amet elite author nulla.
+    </div>
+
+<!-- 
+    COPYRIGHT © 2020 SIXTEEN CLOTHING CO., LTD. - DESIGN: TEMPLATEMO -->
+    <em>COPYRIGHT © 2020 SIXTEEN CLOTHING CO., LTD. - DESIGN: TEMPLATEMO</em>
+
+
+</body>
+</html>
